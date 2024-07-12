@@ -12,3 +12,8 @@ variable "snapshot-rg" {
   type = any
   default = []
 }
+
+variable "vm" {
+  type = any
+  default = []
+}
