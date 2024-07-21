@@ -53,3 +53,9 @@ module "disk_backup" {
   snapshot-rg  = module.rg.snapshot-rg
   vm           = module.win-vm.vm
 }
+
+module "alert_policy" {
+  source = "./modules/alert_policy"
+  rg     = module.rg.rg
+  vm     = module.win-vm.vm
+}
