@@ -20,8 +20,9 @@ resource "azurerm_monitor_activity_log_alert" "activity_log_alert" {
   name                = "${var.prefix}-vm-restart-alert"
   resource_group_name = var.rg.name
   # Below is my azure subscription but i replace it with the above
-  scopes              =  ["/subscriptions/d23c01fa-5060-43cd-a999-9dd91ef91994/resourceGroups/rg/providers/Microsoft.Compute/virtualMachines/example-machine"]
-  description         = "This alert will monitor if any VM restarts"
+
+  scopes      = [azurerm_resource_group.example.id]
+  description = "This alert will monitor if any VM restarts"
 
   criteria {
     resource_id = var.vm.id

@@ -1,19 +1,19 @@
 variable "rg" {
-  type = any 
+  type    = any
   default = []
 }
 
 variable "managed_disk" {
-  type = any 
+  type    = any
   default = []
 }
 
 variable "snapshot-rg" {
-  type = any
+  type    = any
   default = []
 }
 
 variable "vm" {
-  type = any
+  type    = any
   default = []
 }

@@ -43,7 +43,7 @@ resource "azurerm_managed_disk" "managed-disk" {
   create_option        = "Empty"
   disk_size_gb         = 16
 
-  
+
 }
 
 resource "azurerm_virtual_machine_data_disk_attachment" "disk-attachment" {

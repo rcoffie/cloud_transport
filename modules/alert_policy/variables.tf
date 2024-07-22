@@ -3,11 +3,11 @@ variable "prefix" {
 }
 
 variable "rg" {
-  type = any
+  type    = any
   default = []
 }
 
 variable "vm" {
-  type = any
+  type    = any
   default = []
 }

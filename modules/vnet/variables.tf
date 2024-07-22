@@ -3,7 +3,7 @@ variable "prefix" {
 }
 
 variable "rg" {
-  type = any 
+  type    = any
   default = []
 }
 
