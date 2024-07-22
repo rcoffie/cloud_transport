@@ -46,13 +46,13 @@ module "vpn" {
   gateway = module.vnet.gateway
 }
 
-module "disk_backup" {
-  source       = "./modules/disk_backup"
-  rg           = module.rg.rg
-  managed_disk = module.win-vm.managed_disk
-  snapshot-rg  = module.rg.snapshot-rg
-  vm           = module.win-vm.vm
-}
+# module "disk_backup" {
+#   source       = "./modules/disk_backup"
+#   rg           = module.rg.rg
+#   managed_disk = module.win-vm.managed_disk
+#   snapshot-rg  = module.rg.snapshot-rg
+#   vm           = module.win-vm.vm
+# }
 
 module "alert_policy" {
   source = "./modules/alert_policy"
