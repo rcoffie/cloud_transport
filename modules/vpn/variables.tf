@@ -3,12 +3,12 @@ variable "prefix" {
 }
 
 variable "rg" {
-  type = any
+  type    = any
   default = []
 }
 
 
 variable "gateway" {
-  type = any 
+  type    = any
   default = []
 }
